@@ -6,7 +6,7 @@ import { IRootState } from 'app/shared/reducers';
 import { login } from 'app/shared/reducers/authentication';
 import LoginModal from './login-modal';
 
-export interface ILoginProps extends StateProps, DispatchProps, RouteComponentProps<{}> {}
+export interface ILoginProps extends StateProps, DispatchProps, RouteComponentProps<any> {}
 
 export const Login = (props: ILoginProps) => {
   const [showModal, setShowModal] = useState(props.showModal);
@@ -33,7 +33,7 @@ export const Login = (props: ILoginProps) => {
 const mapStateToProps = ({ authentication }: IRootState) => ({
   isAuthenticated: authentication.isAuthenticated,
   loginError: authentication.loginError,
-  showModal: authentication.showModalLogin
+  showModal: authentication.showModalLogin,
 });
 
 const mapDispatchToProps = { login };

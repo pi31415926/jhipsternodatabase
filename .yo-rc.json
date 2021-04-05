@@ -3,7 +3,7 @@
     "promptValues": {
       "packageName": "com"
     },
-    "jhipsterVersion": "6.8.0",
+    "jhipsterVersion": "7.0.1",
     "applicationType": "monolith",
     "baseName": "jhipsternodatabase",
     "packageName": "com",
@@ -35,6 +35,17 @@
     "dtoSuffix": "DTO",
     "otherModules": [],
     "enableTranslation": false,
-    "blueprints": []
+    "blueprints": [],
+    "skipUserManagement": true,
+    "withAdminUi": true,
+    "skipClient": false,
+    "skipServer": false,
+    "skipCheckLengthOfIdentifier": false,
+    "skipFakeData": false,
+    "pages": [],
+    "reactive": false,
+    "nativeLanguage": "en",
+    "languages": ["en", "fr"],
+    "entities": []
   }
 }
