@@ -13,20 +13,22 @@ import { AUTHORITIES } from 'app/config/constants';
 
 const Admin = Loadable({
   loader: () => import(/* webpackChunkName: "administration" */ 'app/modules/administration'),
-  loading: () => <div>loading ...</div>
+  loading: () => <div>loading ...</div>,
 });
 
-const Routes = () => (
-  <div className="view-routes">
-    <Switch>
-      <ErrorBoundaryRoute path="/login" component={Login} />
-      <ErrorBoundaryRoute path="/logout" component={Logout} />
-      <PrivateRoute path="/admin" component={Admin} hasAnyAuthorities={[AUTHORITIES.ADMIN]} />
-      <ErrorBoundaryRoute path="/" exact component={Home} />
-      <PrivateRoute path="/" component={Entities} hasAnyAuthorities={[AUTHORITIES.USER]} />
-      <ErrorBoundaryRoute component={PageNotFound} />
-    </Switch>
-  </div>
-);
+const Routes = () => {
+  return (
+    <div className="view-routes">
+      <Switch>
+        <ErrorBoundaryRoute path="/login" component={Login} />
+        <ErrorBoundaryRoute path="/logout" component={Logout} />
+        <PrivateRoute path="/admin" component={Admin} hasAnyAuthorities={[AUTHORITIES.ADMIN]} />
+        <ErrorBoundaryRoute path="/" exact component={Home} />
+        <PrivateRoute path="/" component={Entities} hasAnyAuthorities={[AUTHORITIES.USER]} />
+        <ErrorBoundaryRoute component={PageNotFound} />
+      </Switch>
+    </div>
+  );
+};
 
 export default Routes;

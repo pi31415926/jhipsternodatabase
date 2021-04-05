@@ -20,7 +20,7 @@ const rootReducer = combineReducers<IRootState>({
   applicationProfile,
   administration,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
-  loadingBar
+  loadingBar,
 });
 
 export default rootReducer;
