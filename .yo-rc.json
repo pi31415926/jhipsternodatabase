@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com"
+    },
+    "jhipsterVersion": "6.8.0",
+    "applicationType": "monolith",
+    "baseName": "jhipsternodatabase",
+    "packageName": "com",
+    "packageFolder": "com",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "caffeine",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "no",
+    "devDatabaseType": "no",
+    "prodDatabaseType": "no",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZGJjYjA5YmNiMjIxZTQzYjhhOGVmNjIwNTYxNmU0OGJkMzhhYWI3MjJjOGFhN2M3MDU5ZTYyODUzNWI3NTZjMjgwYmQ2ODNhYzdmODYxY2YwODRmMjE4ZDJlMDRlOTc1YWQwZmRkZjU4MWY5MWU1MjYzNzFiMmI5YzEyNzkwZmM=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "react",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1586421628264,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
